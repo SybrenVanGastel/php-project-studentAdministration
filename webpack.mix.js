@@ -13,3 +13,11 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css');
+
+mix.browserSync({
+    proxy: 'student_administration.test',
+    port: 3000
+});
+
+mix.version();
+mix.disableNotifications();
