@@ -6,6 +6,7 @@
 {{--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"/>--}}
 {{--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>--}}
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+    @yield('css_after')
     <title>@yield('title', 'Student Administration')</title>
     {{--    @include('shared.icons')--}}
 </head>
@@ -19,5 +20,6 @@
 {{--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>--}}
 {{--<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.js"></script>--}}
 <script src="{{ mix('js/app.js') }}"></script>
+@yield('script_after')
 </body>
 </html>
